@@ -1,0 +1,495 @@
+/* font-family: 'Cormorant Infant', serif; */
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* reset style start */
+body{color: #666; font-family: 'Noto Sans KR', sans-serif;}
+h1{font-weight: 500; font-size: 38px;}
+h5{font-weight: 300;}
+p{line-height: 30px;}
+/* reset style end */
+
+/* header style start */
+header{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+/* navi style start */
+header .navi_box{
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+}
+header .filter{
+  width: 100%;
+  height: 6vh;
+  background-color: #222;
+  position: fixed;
+  z-index: 999;
+  opacity: 0.5;
+}
+header nav{
+  width: 75%;
+  height: 4vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+  position: relative;
+  
+}
+nav .logo{
+  width: 12%;
+  height: 76%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav .logo .img_box{
+  width: 100%;
+  height: 100%;
+}
+nav .logo .img_box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+nav .navi{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+nav .util{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+  .banner{
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    position: relative;
+  }
+  .banner .banner_box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .banner .img_box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .banner .img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .banner .banner_text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .banner .banner_text .text_box{
+    width: 30%;
+    height: 20%;
+    z-index: 100;
+  }
+  /* header style end */
+
+  /* sec01 style start */
+  .sec01{
+    width: 100%;
+    height: 335vh;
+    background-color: white;
+  }
+  /* top style start */
+  .sec01 .top{
+    width: 75%;
+    height: 90vh;
+    margin: 0 auto;
+    position: relative;
+  }
+  .sec01 .top .text_box{
+    width: 45%;
+    height: 25%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
+  .sec01 .top .text_box .title{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .sec01 .top .text_box .title h1{
+    line-height: 60px;
+  }
+  .sec01 .top .text_box .line{
+    width: 2px;
+    height: 60%;
+    margin: 0 2%;
+    background-color: #666;
+  }
+  .sec01 .top .left_img{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    background-image: url(../img/markMaker_page/sec01_top_left.png);
+    background-size: cover;
+  }
+  .sec01 .top .right_img{
+    width: 40%;
+    height: 90%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/markMaker_page/sec01_top_right.jpg);
+    background-size: cover;
+  }
+  /* top style end */
+  /* mid style start */
+  .sec01 .mid{
+    width: 50%;
+    height: 30vh;
+    margin: 8% auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sec01 .mid .img_box{
+    width: 30%;
+    height: 100%;
+  }
+  .sec01 .mid .img_01{
+    background-image: url(../img/markMaker_page/sec01_mid_img01.png);
+    background-size: cover;
+  }
+  .sec01 .mid .img_02{
+    background-image: url(../img/markMaker_page/sec01_mid_img02.png);
+    background-size: cover;
+  }
+  .sec01 .mid .img_03{
+    background-image: url(../img/markMaker_page/sec01_mid_img03.png);
+    background-size: cover;
+  }
+  /* mid style end */
+  /* bot style start */
+  .sec01 .bot{
+    width: 75%;
+    height: 170vh;
+    margin: 0 auto;
+    position: relative;
+  }
+  .sec01 .bot .text_box{
+    width: 45%;
+    height: 25%;
+    position: absolute;
+    left: 5%;
+  }
+  .sec01 .bot .text_box .title{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .sec01 .bot .text_box .title h1{
+    line-height: 60px;
+  }
+  .sec01 .bot .text_box .line{
+    width: 2px;
+    height: 60%;
+    margin: 0 2%;
+    background-color: #666;
+  }
+  .sec01 .bot .left,.sec01 .bot .right{
+    width: 45%;
+    height: 70%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .sec01 .bot .left{
+    bottom: 0;
+  }
+  .sec01 .bot .right{
+    top: 0;
+    right: 0;
+  }
+  /* top이라고 하니까 헷갈림 나중에 top_img으로 이름 고치기 */
+  .sec01 .bot .left .top{
+    background-image: url(../img/markMaker_page/sec01_bot_left_top.png);
+    background-size: cover;
+  }
+  .sec01 .bot .left .bot{
+    background-image: url(../img/markMaker_page/sec01_bot_left_bot.png);
+    background-size: cover;
+  }
+  .sec01 .bot .right .top{
+    background-image: url(../img/markMaker_page/sec01_bot_right_top.png);
+    background-size: cover;
+  }
+  .sec01 .bot .right .bot{
+    background-image: url(../img/markMaker_page/sec01_bot_right_bot.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .sec01 .bot .img_box{
+    width: 100%;
+    height: 35%;
+    background-color: salmon;
+  }
+  /* bot style end */
+  /* sec01 style end */
+
+  /* sec02 style start */
+  .sec02{
+    width: 100%;
+    height: 235vh;
+    position: relative;
+    
+  }
+  .sec02 .bg_img{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/markMaker_page/sec02_bg.png);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+  }
+  .sec02 .center_box{
+    width: 65%;
+    height: 235vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sec02 .tab_box{
+    width: 15%;
+    height: 20%;
+    margin-top: 10vh;
+    color: white;
+  }
+  .sec02 .tab_box h1{
+    margin-bottom: 20px;
+    font-family: 'Cormorant Infant', serif;
+  }
+  .sec02 .tab_box p{
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  .sec02 .slide_box{
+    width: 65%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .sec02 .slide_containter{
+    width: 100%;
+    height: 2000px;
+    position: relative;
+    top: 10vh;
+  }
+  .sec02 .slide_containter .left, .sec02 .slide_containter .right{
+    width: 44%;
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+  }
+  .sec02 .slide_containter .left{
+    bottom: 0;
+  }
+  .sec02 .slide_containter .right{
+    right: 0;
+  }
+  .sec02 .slide_containter .item_box{
+    width: 100%;
+    height: 600px;
+    background-color: #eee;
+  }
+  .sec02 .item_box .img_box{
+    width: 100%;
+    height: 80%;
+  }
+  .sec02 .item_box .img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .sec02 .item_box .text_box{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec02 .item_box .text_box h3{
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .sec02 .item_box .text_box .line{
+    width: 90%;
+    height: 1px;
+    background-color: #aaa;
+    margin: 5px 0;
+  }
+  .sec02 .item_box .text_box h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  /* sec02 style end */
+
+  /* sec03 style start */
+  .sec03{
+    width: 100%;
+    height: 180vh;
+    background-image: url(../img/markMaker_page/sec03_bg.png);
+    background-size: cover;
+  }
+  .sec03 .center{
+    width: 85%;
+    height: 80vh;
+    margin-left: 15%;
+    position: relative;
+    right: 0;
+    top: 100px;
+  }
+  .sec03 .text_top{
+    width: 20%;
+    height: 10%;
+    color: white;
+  }
+  .sec03 .text_top h1{
+    font-weight: 400;
+  }
+  .sec03 .text_top h2{
+    font-weight: 300;
+  }
+  .sec03 .bot_box{
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    top: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sec03 .img_box{
+    width: 16%;
+    height: 60%;
+    background-image: url(../img/markMaker_page/sec03_img.png);
+    background-size: cover;
+  }
+  .sec03 .bot_box .text_box{
+      width: 50%;
+      height: 100%;
+      padding: 5% 5% 0;
+      background-color: white;
+  }
+  .sec03 .bot_box h2{
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  .sec03 p{
+    width: 60%;
+    height: 80%;
+  }
+  .sec03 .video_box{
+    width: 75%;
+    height: 30%;
+    position: relative;
+    margin: 15% auto 0;
+  }
+  .sec03 .video_box video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  /* sec03 style end */
+
+  /* footer style start */
+footer{
+  width: 100%;
+  height: 35vh;
+  overflow: hidden;
+  background-color: #222;
+}
+footer .container{
+  width: 75%;
+  height: 75%;
+  margin: 50px auto 10px;
+  position: relative;
+}
+footer .center_box{
+  width: 35%;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .center_box .line{
+  width: 30%;
+  height: 1px;
+  background-color: #aaa;
+}
+footer .container .right_box{
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 5%;
+}
+footer .container .left_box{
+  position: absolute;
+  top: 5%;
+}
+footer .container p{
+  font-size: 12px;
+  font-weight: 300;
+  color: #ddd;
+}
+footer .sns_box{
+  width: 10%;
+  display: flex;
+  font-size: 18px;
+  color: #777;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: salmon; */
+}
+/* footer style end */

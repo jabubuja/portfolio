@@ -1,0 +1,449 @@
+/* font-family: 'Cormorant Infant', serif; */
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* reset style start */
+body{color: #666; font-family: 'Noto Sans KR', sans-serif;}
+h1{font-weight: 500;}
+h5{font-weight: 300;}
+p{line-height: 30px;}
+/* reset styel end */
+
+/* header style start */
+header{
+    width: 100%;
+    height: 180vh;
+    background-color: #222;
+    background-image: url(../img/montbalncHouse_page/header_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  header .head{
+    width: 100%;
+    height: 6vh;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* navi style start */
+header .navi_box{
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1200;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+}
+header .filter{
+  width: 100%;
+  height: 6vh;
+  background-color: #222;
+  position: fixed;
+  z-index: 1100;
+  opacity: 0.5;
+}
+header nav{
+  width: 75%;
+  height: 4vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+  position: relative;
+  
+}
+nav .logo{
+  width: 12%;
+  height: 76%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav .logo .img_box{
+  width: 100%;
+  height: 100%;
+}
+nav .logo .img_box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+nav .navi{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+nav .util{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+  /* nav style end */
+
+  header .banner{
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  header .banner .title_box{
+    width: 40%;
+    height: 20vh;
+    font-weight: 1,300;
+    position: absolute;
+    top: 200px;
+  }
+  header .banner .title_box h1{
+    font-size: 65px;
+    font-weight: 1,300;
+  }
+  header .banner .title_box h1:nth-child(1){
+    color: #ddd;
+  }
+  header .banner .title_box .line{
+    width: 100%;
+    height: 1px;
+    margin: 5px 0 10px;
+    background-color: #333;
+  }
+  header .banner .text_box_center{
+    width: 50%;
+    height: 80vh;
+    text-align: center;
+    font-family: 'Cormorant Infant', serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35vh;
+    opacity: 0.4;
+  }
+  header .banner .text_box_center h1{
+    font-size: 65px;
+    margin: 80px;
+    font-weight: 300;
+  }
+  header .banner .text_box{
+    width: 30%;
+    position: absolute;
+    color: #eee;
+  }
+  header .banner .text_box h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  header .banner .text_box p{
+    font-weight: 100;
+    line-height: 34px;
+    /* text-shadow: 8px 10px 8px #000; */
+  }
+  header .banner .writer{
+    top: 450px;
+    right: 0;
+  }
+  header .banner .cafe{
+    top: 750px;
+    left: 8%;
+  }
+  header .banner .boutique{
+    top: 1200px;
+    right: 17vh;
+  }
+  /* header style end */
+
+  /* sec01 style start */
+  .sec01{
+    width: 75%;
+    height: 120vh;
+    margin: 0 auto;
+    position: relative;
+  }
+  .sec01 .title_box{
+    width: 33%;
+    height: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 10vh;
+    
+  }
+  .sec01 .title_box .line{
+    width: 1px;
+    height: 60%;
+    background-color: #555;
+  }
+  .sec01 .img_top{
+    width: 20%;
+    height: 30%;
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-image: url(../img/montbalncHouse_page/sec01_img01.png);
+    background-size: cover; */
+  }
+  .sec01 .img_top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .sec01 .img_bot{
+    width: 45%;
+    height: 25%;
+    position: absolute;
+    bottom: 25vh;
+    background-image: url(../img/montbalncHouse_page/sec01_img02.png);
+    background-size: cover;
+  }
+  .sec01 .text_box{
+    width: 40%;
+    height: 15%;
+    position: absolute;
+    color: #444;
+  }
+  .sec01 .top{
+    top: 40vh;
+    left: 55%;
+  }
+  .sec01 .bot{
+    bottom: 3vh;
+    left: 38%;
+  }
+  /* sec01 style end */
+
+  /* sec02 style start */
+  .sec02{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #222;
+  }
+  .sec02 h1{
+    font-size: 30px;
+    position: absolute;
+    top: 10vh;
+    left: 15%;
+    color: #ddd;
+  }
+  .sec02 .center{
+    width: 25%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  .sec02 .container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .sec02 .container .img_box{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+  }
+  .sec02 .container .img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .sec02 .text_box{
+    width: 30%;
+    position: absolute;
+    top: 60%;
+    right: 15%;
+    color: #eee;
+    
+  }
+  .sec02 .text_bg{
+    position: absolute;
+    left: 22%;
+    bottom: 13vh;
+    text-align: center;
+  }
+  .sec02 .text_bg h2{
+    font-family: 'Cormorant Infant', serif;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 90px;
+  }
+  /* sec02 style end */
+
+  /* sec03 style start */
+  .sec03{
+    width: 85%;
+    height: 80vh;
+    margin-left: 15%;
+    padding-top: 50px;
+  }
+  .sec03 .mySwiper{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  .sec03 .swiper-wrapper{
+    /* width: 120%; */
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: -560px;
+  }
+  .sec03 .swiper-slide{
+    width: 500px;
+    height: 100%;
+  }
+
+  .sec03 .swiper-slide .img_box{
+    width: 500px;
+    height: 76%;
+    margin-bottom: 15px;
+  }
+  .sec03 .swiper-slide .img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .sec03 .text_box{
+    width: 65%;
+    height: 15vh;
+    margin-top: 100px;
+    color: #888;
+  }
+  .sec03 .swiper-pagination-progressbar{
+    position: absolute;
+    top: 340px;
+    background-color: #eee;
+  }
+  .sec03 .swiper-pagination-progressbar-fill{
+    background-color: #ccc;
+  }
+  /* sec03 style end */
+
+  /* sec04 style start */
+  .sec04{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .sec04 h1{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .sec04 .wrap{
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .sec04 .swiper {
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sec04 .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+  .sec04 .mySwiper2 {
+    width: 850px;
+    height: 500px;
+  }
+  .sec04 .mySwiperS{
+    width: 700px;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+  .sec04 .mySwiperS .swiper-slide {
+    width: 24%;
+    height: 100%;
+    opacity: 0.4;
+  }
+  .sec04 .mySwiperS .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  .sec04 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+/* sec04 style end */
+
+/* footer style start */
+footer{
+  width: 100%;
+  height: 35vh;
+  overflow: hidden;
+  background-color: #222;
+}
+footer .container{
+  width: 75%;
+  height: 75%;
+  margin: 50px auto 10px;
+  position: relative;
+}
+footer .center_box{
+  width: 35%;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .center_box .line{
+  width: 30%;
+  height: 1px;
+  background-color: #aaa;
+}
+footer .container .right_box{
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 5%;
+}
+footer .container .left_box{
+  position: absolute;
+  top: 5%;
+}
+footer .container p{
+  font-size: 12px;
+  font-weight: 300;
+  color: #ddd;
+}
+footer .sns_box{
+  width: 10%;
+  display: flex;
+  font-size: 18px;
+  color: #777;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: salmon; */
+}
+/* footer style end */

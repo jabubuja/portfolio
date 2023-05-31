@@ -1,0 +1,827 @@
+/* font-family: 'Cormorant Infant', serif; */
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+:root{
+  font-size: 10px;
+  --head_title_font:5rem;
+  --body_title_font:2.6rem;
+  --body_font:1.6rem;
+  --small-font:1.4rem;
+  --price-font:1.8rem;
+}
+
+/* reset style start */
+body{color: #666; font-family: 'Noto Sans KR', sans-serif;}
+h1{font-weight: 500;}
+h5{font-weight: 300; font-size: var(--small-font);}
+p{line-height: 30px; font-size: var(--body_font); font-weight: 300;}
+.btn{
+  width: 140px;
+  height: 40px;
+  background-color: #eee;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.btn:hover{
+  background-color: #444;
+  color: #eee;
+  transition: 0.5s;
+}
+.btn_slide_left,.btn_slide_right{
+  /* <i class="fa-solid fa-angle-left"></i> */
+  /* <i class="fa-solid fa-angle-right"></i> */
+  font-size: 20px;
+}
+/* reset style end */
+
+/* header style start */
+header{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+/* navi style start */
+header .navi_box{
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+}
+header .filter{
+  width: 100%;
+  height: 6vh;
+  background-color: #222;
+  position: fixed;
+  z-index: 999;
+  opacity: 0.5;
+}
+header nav{
+  width: 75%;
+  height: 4vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--small-font);
+  color: white;
+  position: relative;
+  
+}
+nav .logo{
+  width: 12%;
+  height: 76%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav .logo .img_box{
+  width: 100%;
+  height: 100%;
+}
+nav .logo .img_box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+nav .navi{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+nav .util,
+nav .ham_btn{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+nav .mobilUtil{
+  width: 13%;
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+.fa-bars,
+.fa-x{
+  color: white;
+  visibility: hidden;
+  position: absolute;
+}
+.ham_show{
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+.ham_hidden{
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+/* navi style end */
+
+
+/* responsive toggle style start */
+.toggle_box{
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  position: fixed;
+  background-color: #222;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 1s;
+  z-index: 999;
+}
+.toggle_box ul{
+  width: 80%;
+  height: 80%;
+}
+.toggle_box ul li{
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+.nav_show{
+  transform: translateX(0);
+  transition: 1s;
+  opacity: 1;
+}
+
+/* banner style start */
+header .wrapper{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+header .container{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+header .slide_item{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+header .slide_item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+header .slide_item p,
+header .slide_item h1{
+  position: absolute;
+}
+header .slide_item h1{
+  color: white;
+  font-size: 7.5rem;
+  left: 23%;
+}
+header .slide_item .right{
+  color: #999;
+  letter-spacing: 8px;
+  right: 32%;
+}
+header .slide_item .center{
+  color: #999;
+  bottom: 15%;
+  color: white;
+  font-weight: 300;
+}
+header .slide_item .center span{
+  color: #999;
+}
+header .slide_item .left{
+  left: 12%;
+  writing-mode: vertical-lr;
+  font-size: 14px;
+}
+header .pager_box{
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
+  transform: translateX(-50%);
+}
+.pager{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+/* header style end */
+
+/* sec01 style start */
+#sec01{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sec01 .swiper {
+  width: 100%;
+  height: 100%;
+}
+#sec01 .swiper-slide {
+  color: #222;
+  display: flex;
+  align-items: center;
+  margin-left: 13%;
+  width: 60%;
+}
+#sec01 .swiper-slide .img_box{
+  width: 40%;
+  height: 75%;
+}
+#sec01 .swiper-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#sec01 .swiper-slide .text_box{
+  width: 55%;
+  height: 90%;
+  position: relative;
+}
+#sec01 .swiper-slide .text_box .rotate_title{
+  width: 55%;
+  height: 10%;
+  font-size: 4rem;
+  font-weight: 700;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 45%;
+  left: -10%;
+  font-family: 'Cormorant Infant', serif;
+}
+#sec01 .swiper-slide .text_box .top{
+  width: 50%;
+  height: 20%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  position: absolute;
+  top: 28%;
+  left: 35%;
+}
+#sec01 .swiper-slide .text_box .bot{
+  width: 60%;
+  height: 20%;
+  font-size: 2.8rem;
+  font-weight: 0,600;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  font-family: 'Cormorant Infant', serif;
+  font-style: italic;
+}
+#sec01 .mySwiper1 .swiper-pagination{
+  position: absolute;
+  bottom: 8rem;
+  left: -65.3rem;
+  --swiper-theme-color:#999
+}
+#sec01 .mySwiper1  .swiper-pagination-bullet{
+  width: 3rem;
+  height: 0.4rem;
+  border-radius: 0;
+}
+/* #sec01 .swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+#sec01 .swiper-slide:nth-child(3n) {
+  width: 40%;
+} */
+/* 일단 슬라이드 스타일은 다 같게 만들 긴 함 나중에 수정할지도..? */
+/* sec01 stylye end */
+
+
+/* sec02 style start */
+#sec02{
+  width: 75%;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+#sec02 h1{
+  position: absolute;
+  top: 20%;
+  font-size: var(--head_title_font);
+}
+#sec02 .container{
+  width: 80%;
+  height: 45%;
+  position: absolute;
+  left: 50%;
+  top: 32%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+#sec02 .item{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#sec02 .item .img_box{
+  width: 100%;
+  height: 80%;
+}
+#sec02 .item .img_box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#sec02 .item:nth-child(2) img{
+  transform: scale(0.8);
+}
+#sec02 .item:nth-child(3) img{
+  transform: scale(0.9);
+}
+#sec02 .item .text_box{
+  width: 100%;
+  height: 14%;
+  text-align: center;
+}
+#sec02 .text_box h3{
+  font-size: var(--small-font);
+  font-weight: 400;
+}
+#sec02 .text_box h2{
+  font-weight: 500;
+  font-size: var(--price-font);
+  line-height: var(--price-font);
+  color: #555;
+}
+#sec02 .text_box .line{
+  width: 80%;
+  height: 1px;
+  margin: 9px auto 13px;
+  background-color: #ddd;
+}
+/* sec02 style end */
+
+
+/* sec03 style start */
+#sec03{
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+}
+#sec03 .img_box{
+  width: 80%;
+  height: 80%;
+  background-image: url(../img/main_page/sec03_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* sec03 style end */
+
+
+/* sec04 style start */
+#sec04{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+#sec04 h1{
+  font-size: 3.4rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 100px;  
+}
+#sec04 .box{
+  width: 75%;
+  height: 60vh;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30vh;
+  display: flex;
+  justify-content: space-between;
+}
+#sec04 .left,#sec04 .right{
+  width: 40%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#sec04 .container{
+  width: 100%;
+  height: 30%;
+  position: relative;
+}
+#sec04 .img_box{
+  width: 200%;
+  height: 100%;
+  position: absolute;
+}
+#sec04 .left .img_box{
+  left: -100%;
+}
+#sec04 .right .img_box{
+  right: -100%;
+}
+#sec04 .img_box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#sec04 .text_box{
+  width: 100%;
+  height: 60%;
+}
+#sec04 .right .text_box{
+  text-align: right;
+}
+#sec04 h2{
+  margin-bottom: 20px;
+  font-size: 3rem;
+  line-height: 45px;
+  font-weight: 600;
+  color: #777;
+}
+#sec04 .left .btn{
+  margin-top: 20px;
+}
+#sec04 .right .btn{
+  margin-top: 20px;
+  float: right;
+}
+/* sec04 style end */
+
+
+/* sec05 style start*/
+#sec05{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #222;
+}
+#sec05 .title{
+  width: 50%;
+  height: 10vh;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+  font-weight: 500;
+  font-size: 3rem;
+}
+#sec05 .title .line{
+  width: 5%;
+  height: 2px;
+  background-color: #eee;
+  margin-left: 10px;
+}
+#sec05 .center{
+  width: 40%;
+  height: 70vh;
+  position: absolute;
+  left: 50%; transform: translateX(-50%); top: 21vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#sec05 .swiper{
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+}
+#sec05 .swiper-wrapper{
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+#sec05 .swiper-slide{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#sec05 .swiper-slide img{
+  width: 70%;
+  height: 80%;
+  object-fit: cover;
+}
+#sec05 .swiper-slide p{
+  width: 100%;
+  height: 18%;
+  text-align: center;
+  color: #eee;
+  font-weight: 300;
+  line-height: 30px;
+}
+#sec05 .swiper-button-next,
+#sec05 .swiper-button-prev{
+  position: absolute;
+  top: 46%;
+  transform: translateY(-50%);
+  color: #eee;
+  /* font-size: 1rem; */
+  --swiper-navigation-size: 3rem;
+}
+/* sec05 style end */
+
+
+/* sec06 style start */
+#sec06{
+  width: 100%;
+  height: 140vh;
+  background-color: #222;
+}
+#sec06 .wrap{
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  color: #eee;
+  font-weight: 300;
+}
+#sec06 .wrap .img_box{
+  position: absolute;
+  width: 1200px;
+  height: 800px;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+#sec06 .wrap .img_box svg{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+#sec06 .text_box{
+  width: 38%;
+  height: 25%;
+}
+#sec06 .text_box h2{
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+#sec06 .left{
+  position: absolute;
+  top: 5%;
+}
+#sec06 .right{
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+}
+#sec06 .bot{
+  position: absolute;
+  bottom: 15%;
+}
+/* sec06 style end */
+
+
+/* sec07 style start */
+#sec07{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/main_page/sec07.png);
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sec07 .video_box{
+  position: relative;
+  width: 90%;
+  height: 80%;
+}
+#sec07 video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* sec07 style end */
+
+
+/* sec08 style start */
+#sec08{
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+#sec08 h1{
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  font-size: var(--head_title_font);
+}
+#sec08 .swiper{
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: 17%;
+  overflow: hidden;
+}
+#sec08 .swiper-wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  left: -25%;
+}
+#sec08>.mySwiperR>.swiper-wrapper>.swiper-slide{
+  width: 25%;
+  height: 100%;
+}
+#sec08 .swiper-slide .img_box{
+  margin: 0 auto 10px;
+  width: 80%;
+  height: 87%;
+  position: relative;
+}
+#sec08 .swiper-slide .img_box img{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: block;
+}
+#sec08 .swiper-slide .text_box{
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+#sec08 .swiper-slide .text_box h3{
+  font-weight: 400;
+  font-size: var(--body_font);
+}
+#sec08 .swiper-slide .text_box p{
+  font-weight: 500;
+  font-size: var(--price-font);
+  color: #555;
+}
+/* #sec08 .pager{
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 15%;
+  bottom: 110px;
+  background-color: #eee;
+}
+#sec08 .active{
+  width: 30%;
+  height: 2px;
+  background-color: #ccc;
+} */
+/* sec08 style end */
+
+
+/* sec09 style start */
+#sec09{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #ddd;
+}
+#sec09 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#sec09 .img01,#sec09 .img02,#sec09 .img03,#sec09 .img04{
+  position: absolute;
+  overflow: hidden;
+}
+#sec09 .img01{
+  width: 30%;
+  height: 100%;
+}
+#sec09 .img02{
+  width: 70%;
+  height: 50%;
+  right: 0;
+}
+#sec09 .img03{
+  width: 35%;
+  height: 50%;
+  left: 30%;
+  bottom: 0;
+}
+#sec09 .img04{
+  width: 35%;
+  height: 50%;
+  right: 0;
+  bottom: 0;
+}
+#sec09 .img01 img,
+#sec09 .img02 img,
+#sec09 .img03 img,
+#sec09 .img04 img{
+  transition: 0.7s;
+}
+#sec09 .img01:hover img,
+#sec09 .img02:hover img,
+#sec09 .img03:hover img,
+#sec09 .img04:hover img{
+  transform: scale(1.2);
+  transition: 0.7s;
+}
+/* sec09 style end */
+
+
+/* footer style start */
+footer{
+  width: 100%;
+  height: 35vh;
+  overflow: hidden;
+  background-color: #222;
+}
+footer .container{
+  width: 75%;
+  height: 75%;
+  margin: 50px auto 10px;
+  position: relative;
+}
+footer .center_box{
+  width: 35%;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .center_box .line{
+  width: 30%;
+  height: 1px;
+  background-color: #aaa;
+}
+footer .container .right_box{
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 5%;
+}
+footer .container .left_box{
+  position: absolute;
+  top: 5%;
+}
+footer .container p{
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #ddd;
+}
+footer .sns_box{
+  width: 10%;
+  display: flex;
+  font-size: 1.8rem;
+  color: #777;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+/* footer style end */
